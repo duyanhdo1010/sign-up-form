@@ -42,7 +42,8 @@
                     </div>
                     <div class="col-items password-container">
                         <label for="password">PASSWORD</label>
-                        <input type="password" class="error" name="name" id="password" onkeyup='checkPassword();' required>
+                        <input type="password" class="error" name="name" id="password" oninput='checkPassword();' required>
+                        <div class="check-password"></div>
                     </div>
                 </div>
                 <div class="second-col">
@@ -56,7 +57,7 @@
                     </div>
                     <div class="col-items">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="name" id="confirm-password" onkeyup='checkPassword();' required>
+                        <input type="password" name="name" id="confirm-password" oninput='checkPassword();' required>
                     </div>
                 </div>
             </div>
@@ -64,8 +65,8 @@
         </div>
         <div class="content-footer">
             <div class="footer-items">
-                <div class="create-btn" id="myButton">
-                    <button type="submit">Create Account</button>
+                <div class="create-btn" >
+                    <button type="submit" form="myForm">Create Account</button>
                 </div>
                 <div class="content">
                     <p>Already have an account? <a href="">Log in</a></p>

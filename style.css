@@ -170,13 +170,9 @@ button {
     justify-content: center;
     align-items: center;
     padding: 1vh;
-
 }
 
-.password-container input.error::after {
-    content: "Mật khẩu không khớp";
+div.check-password{
     color: red;
-    position: absolute;
-    left: 0;
-    top: 100%;
+    font-size: 0.75rem;
 }

@@ -1,18 +1,19 @@
-var checkPassword = function(){
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirm-password").value;
+var passwordField = document.getElementById("password");
+var confirmPasswordField = document.getElementById("confirm-password");
+var checkPasswordMessage = document.querySelector(".check-password");
+
+function checkPassword() {
+    var password = passwordField.value;
+    var confirmPassword = confirmPasswordField.value;
+
     if (password != confirmPassword) {
-        password.style.cssText = "border-color: red; ";
-        confirmPassword.style.cssText = "border-color: red;";
-        password.classList.add("error");
+        passwordField.style.cssText = "border-color: red; border-width: 2px; ";
+        confirmPasswordField.style.cssText = "border-color: red; border-width: 2px;";
+        checkPasswordMessage.textContent = "* Passwords do not match!";
         return false;
     }
-    password.style.cssText = "border-color: green; ";
-    confirmPassword.style.cssText = "border-color: green;";
-    password.classList.remove("error");
+    passwordField.style.cssText = "border-color: green; border-width: 2px;";
+    confirmPasswordField.style.cssText = "border-color: green; border-width: 2px;";
+    checkPasswordMessage.textContent = "";
     return true;
 }
-
-document.getElementById("myButton").addEventListener("click", function() {
-    document.getElementById("myForm").submit();
-});
