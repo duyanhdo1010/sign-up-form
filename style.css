@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Logo';
+    src: url(./resources/fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div.bg-content {
+    width: 30vw;
+    height: 100vh;
+    background-image: url('./resources/img/bg-image.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.bg-content .bg-logo{
+    font-family: 'Logo';
+    position: absolute;
+    top: 20vh;
+    padding: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 4rem;
+}
+
+.bg-logo img{
+    width: auto;
+    height: 90%;
+}
+
+.bg-credit {
+    position: absolute;
+    bottom: 0;
+    height: 3vh;
+    width: 100%;
+    font-size: 0.75rem;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-credit a {
+    color: aliceblue;
+}
+
+div.main-content {
+    width: 70vw;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+em {
+    font-style: italic;
+}
+
+.content-header {
+    position: relative;
+    height: 35vh;
+    background-color: rgb(241, 241, 241);
+}
+
+.text-content {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    font-weight: 500;
+}
+
+.text-content p {
+    margin-top: 1.25rem;
+}
+
+.content-main {
+    max-height: 35vh;
+    background-color: rgb(255, 255, 255);
+    padding-left: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-main .main-header {
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.content-main .main-content {
+    padding: 0;
+    display: flex;
+    gap: 4rem;
+}
+
+div.first-col, div.first-col ~ div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.col-items label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.col-items input[type="text"],
+.col-items input[type="email"],
+.col-items input[type="tel"],
+.col-items input[type="password"]{
+    width: 20vw;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 4vh;
+    padding-left: 0.5rem;
+}
+
+
+.content-footer {
+    position: relative;
+    height: 30vh;
+    background-color: rgb(241, 241, 241);
+    padding-left: 2rem;
+}
+
+.content-footer .footer-items {
+    padding: 1.5rem 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.footer-items .content{
+    font-size: 1rem;
+}
+
+.footer-items .content a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    padding: 0.5rem 2.5rem;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.content-footer .footer-credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+
+}
+
+.password-container input.error::after {
+    content: "Mật khẩu không khớp";
+    color: red;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}

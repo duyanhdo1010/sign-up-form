@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-content">
+        <div class="bg-logo">
+            <img src="./resources/img/odin-logo.png" alt=""> ODIN
+        </div>
+
+        <div class="bg-credit">
+            Photo by &nbsp;<a href="">Halie West</a>&nbsp;on&nbsp;<a href="">Unsplash</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-header">
+            <div class="text-content">
+                <p>This is not a real online service! You know you need something <br>
+                like this in your life to help you realize your deepest dreams.<br>
+                Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+        </div>
+        <div class="content-main">
+            <form action="" id="myForm">
+            <div class="main-header">Let's do this!</div>
+            <div class="main-content">
+                <div class="first-col">
+                    <div class="col-items">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="name" id="first-name" required>
+                    </div>
+                    <div class="col-items">
+                        <label for="email">EMAIL</label>
+                        <input type="text" name="name" id="email" required>
+                    </div>
+                    <div class="col-items password-container">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" class="error" name="name" id="password" onkeyup='checkPassword();' required>
+                    </div>
+                </div>
+                <div class="second-col">
+                    <div class="col-items">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="name" id="last-name" required>
+                    </div>
+                    <div class="col-items">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="name" id="phone" required>
+                    </div>
+                    <div class="col-items">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="name" id="confirm-password" onkeyup='checkPassword();' required>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="content-footer">
+            <div class="footer-items">
+                <div class="create-btn" id="myButton">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="content">
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
+            </div>
+            <div class="footer-credit">Copyright © Do Duy Anh </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
